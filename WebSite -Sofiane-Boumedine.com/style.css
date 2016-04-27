@@ -1,0 +1,600 @@
+@font-face {
+    font-family: "sertig";
+    src: url('font/Sertig.otf');
+}
+
+/* Grille */
+
+.row {
+	width : 960px;
+	margin : 10px auto;
+}
+
+.row > div {
+	float : left;
+	margin : 0 10px;
+}
+
+.w-1 { width : 60px; }
+.w-2 { width : 140px; }
+.w-3 { width : 220px; }
+.w-4 { width : 300px; }
+.w-5 { width : 380px; }
+.w-6 { width : 460px; }
+.w-7 { width : 540px; }
+.w-8 { width : 620px; }
+.w-9 { width : 700px; }
+.w-10 { width : 780px; }
+.w-11 { width : 860px; }
+.w-12 { width : 940px; }
+
+.clear { clear : both ; }
+
+/* MISE EN PAGE */
+
+body,html{
+	font-family: sertig, Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #ECECEC;
+    max-width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+header {
+    max-width: 100%;
+    height: 90px;
+}
+
+.logo{
+    float: left;
+    margin-top: 1px;
+    margin-left: 25%;
+    max-width: 8%;
+    height: auto;
+}
+
+
+
+/* NAV BAR */
+
+nav {
+    max-width: 100%;
+    height: 90px;
+    background-color: #cecece;
+    background-size: cover;
+}
+
+nav ul {
+    position: static;
+    top: 0;
+    padding: 0;
+    margin-left: 50%;
+    margin-top: 30px;
+    width: 600px;
+    height: 90px;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin-left: 2%;
+    height: 90px;
+}
+
+nav li:last-child a {
+    margin-left: 0;
+}
+
+nav a {
+    color: white;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    height: 90px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+}
+
+nav li a {
+
+}
+
+.logomenu {
+    display: none;
+}
+
+.menuclose {
+    display: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* CLASSE */
+
+.informations {
+    background-image: url("img/iphonefinal.png");
+    background-repeat: no-repeat;
+    width: 365px;
+    height: 740px;
+}
+
+#textinformation {
+    margin-left: 25%;
+}
+
+
+
+.informations img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.informations p {
+    margin-left: 40px;
+}
+
+.cv {
+	background-image: url("img/ipad.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	width : 960px;
+	height: 1240px;
+	font-size: 16px;
+}
+
+.formulaire {
+	/* Pour le centrer dans la page */
+    width: 500px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+#section {
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+#compo {
+    width: 50%;
+    height: 50%;
+}
+
+#compo2 {
+    width: 30%;
+    height: 30%;
+}
+
+
+#composection {
+    border:hidden 0px #000000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+}
+
+#liste {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.projetimg img {
+    width: 100%;
+    height: 100%;
+}
+
+#supinfo {
+    width: 30%;
+    height: 40%
+}
+
+#contact {
+    margin-right: 5%;
+}
+
+hr {
+border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/* FORMULAIRE */
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+textarea {
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 300px;
+    height: 90px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+input {
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 300px;
+    height: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+    background-image: url(img/boxitem.png);
+}
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+
+    background-image: url(img/Boxmessage.png);
+}
+
+.button {
+    /* Pour positionner les boutons de la même manière que les champs textuels */
+    padding-left: 90px; /* même dimension que les étiquettes */
+}
+
+button {
+    /* Cette marge représente approximativement le même espace
+       que celui entre les étiquettes et les champs textuels */
+    margin-left: .5em;
+}
+
+input {
+	background-image: url(img/boxitem.png);
+}
+
+
+
+
+
+/* BAS DE PAGES */
+
+footer{
+	position: fixed;
+	bottom: 0;
+	background-color: #cecece;
+	margin: 0;
+	padding: 0;
+    height: 10%;
+	width: 100%;
+}
+
+p.footer{
+	float:left;
+	margin-left: 16%; 
+}
+
+ul.footer {
+	list-style-type: none;
+	margin-right: 16%;
+}
+
+li.footer{
+	float: right;
+	display: block;
+	margin-right: 1px;
+}
+
+a.footer {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.footer img:hover {
+  -webkit-filter: blur(1px);
+}
+
+/* CLASSE JS */
+
+.projethover {
+border:solid 2px #000000;
+-moz-border-radius: 12px;
+-webkit-border-radius: 12px;
+border-radius: 12px;
+}
+
+
+
+@media only screen and (max-width:1200px) {
+
+.informations {
+    background-image: url("img/iphonefinal.png");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 740px;
+}
+
+
+header {width: 100%;
+overflow: hidden;}
+nav{width: 100%;
+overflow: hidden;}
+
+
+textarea {
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 70%;
+    height: 90px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+input {
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 70%;
+    height: 40px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+.formulaire {
+    /* Pour le centrer dans la page */
+    width: 70%;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.information .row {
+        width : 100%;
+    }
+.information .row > div { 
+        margin : 0 1%;
+    }
+.w-5, .w-7,{ 
+        width : 98%; 
+        float : none;
+    }
+
+}
+
+
+
+/* RESPONSIVE PART */
+
+@media only screen and (max-width: 740px) {
+
+    .logo {
+        margin-top: 1%;
+        max-width: 20%;
+        margin-left: 5%;
+    }
+
+    .menupush {
+        display: block;
+        float: right;
+        margin-right: 10%;
+        width: 70px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    a.menuclose {
+        padding: 0;
+        margin: 0;
+        width: 0x;
+        height: 0px;
+    }
+
+    .menuclose{
+        display: inline-block;
+        float: right;
+    }
+
+    .logomenuclose {
+        float: left;
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-left: 45%;
+
+    }
+
+    .logomenu {
+        display: block;
+        margin-top: -25px;
+        max-width: 80%;
+        height: auto;
+    }
+
+
+    header{
+        position: static;
+    }
+
+    nav {
+        position: static;
+    }
+
+
+    nav li {
+        position: static;
+        display: block;
+        height: 40px;
+        text-align: center;
+        line-height: 50px;
+        border-bottom: 1px solid black;
+    }
+
+
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 220px;
+        height: 100%;
+        background-color: #cecece;
+        z-index: 999;
+        display: none;
+    }
+
+    nav li a {
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .logo {
+        max-width: 10%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .logo {
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .logo {
+        margin-left: 5%;
+        max-width: 13%;
+    }
+
+    nav ul {
+        margin-left: 25%;
+    }
+
+}
+
+@media only screen and (max-width:980px) {
+
+
+.cv {
+    background-image: url("");
+    background-repeat: no-repeat;
+    max-width : 90%;
+    height: 1240px;
+    font-size: 20px;
+    margin-top: -20%;
+    margin-left: 5%;
+}
+
+#section {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+}
+
+
+@media only screen and (max-width:500px) {
+    .w-4 ul {
+        margin-left: 30%;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:500px) and (max-width:980px) {
+
+
+    .row {
+        width : 100%;
+    }
+    .row > div { 
+        margin : 0 0.5%;
+    }
+    .w-1 { width : 7.3%; }
+    .w-2 { width : 15.6%; }
+    .w-3 { width : 24%; }
+    .w-4 { width : 32.3%; }
+    .w-5 { width : 40.6%; }
+    .w-6 { width : 49%; }
+    .w-7 { width : 57.3%; }
+    .w-8 { width : 65.6%; }
+    .w-9 { width : 74%; }
+    .w-10 { width : 82.3%; }
+    .w-11 { width : 90.6%; }
+    .w-12 { width : 99%; }
+}
+
+
+@media only screen and (max-width:550px) {
+
+    #compo {
+        width: 25%;
+        height: auto;
+    }
+
+    .logo {
+        margin-top: 1%;
+        max-width: 30%;
+    }
+
+    .row {
+        width : 100%;
+    }
+    .row > div { 
+        margin : 0 1%;
+    }
+    .w-1, .w-2, .w-3, .w-4, .w-5, .w-6, .w-7, .w-8, .w-9, .w-10, .w-11, .w-12 { 
+        width : 98%; 
+        float : none;
+    }
+}
+
+
+
